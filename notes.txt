@@ -1,0 +1,34 @@
+Navigation Types inside function
+1) ({navigation,routes})
+2) (props) => props.navigation.navigate("Screenname");
+3) 
+
+
+Navigation : 
+1) navigation.popToTop
+2) Navigation.push
+3) Navigation.replace
+4) Navigation.navigate
+5) navigation.goBack()
+
+
+
+<NavigationContainer>
+            <Stack.Navigator 
+                initialRouteName={navigationStrings.HOME}
+                screenOptions={{headerShown:false}}
+            >
+                <Stack.Screen options={{title:"Mayank Home"}} name={navigationStrings.HOME} component={Home} />
+                <Stack.Screen name={navigationStrings.PROFILE} component={Profile} />
+                <Stack.Screen name={navigationStrings.EXPLORE} component={Explore} />
+            </Stack.Navigator>
+        </NavigationContainer>
+
+
+
+        1) React Navigation 6 Installation
+        2) Created Stack
+        3) Navigate between screen.
+        4) Passed data via navigation between screens.
+        5) Use of tab navigation
+        6) Implemented bottom tab navigation.
